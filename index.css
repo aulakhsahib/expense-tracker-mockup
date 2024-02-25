@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: 'Jakarta Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 90%;
+    margin: auto;
+}
+
+.summary-section {
+    margin-bottom: 0.75rem;
+}
+
+.greeting-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.image-container {
+    display: flex;
+}
+
+.expenses-report-summary-section {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.expenses-report-summary-section>* {
+    flex-grow: 1;
+}
+
+.expenses-report-summary-container {
+    border-radius: 0.5rem;
+    border: 1px solid hsla(0, 0%, 0%, 0.25);
+    padding: 0.5rem;
+
+}
+
+.expenses-report-summary-container>p {
+    color: grey;
+    font-size: 0.75rem;
+}
+
+.highlighted-report-tally {
+    display: block;
+    font-weight: 700;
+    color: black;
+    font-size: 1rem;
+}
+
+.recent-expense-report-section {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.recent-expense-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-expense-header>h2 {
+    font-size: 1rem;
+}
+
+a {
+    color: hsl(350, 100%, 70%);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.report-search {
+    padding: 0.5rem 0.25rem;
+    border-radius: 0.25rem;
+    border: 1px solid grey;
+}
+
+.expense-report-container {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid hsla(0, 0%, 0%, 0.25)
+}
+
+.expense-report-container h3 {
+    font-size: 1rem;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    background-color: hsl(350, 100%, 70%);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+}
+
+.add-expense-button {
+    font-size: 2rem;
+}
+
+.navbar-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    color: black;
+
+}
+
+.navbar-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.add-report-section {
+    margin-top: 1rem;
+    display: grid;
+    row-gap: 1rem;
+}
+
+#report {
+    margin-top: 0.25rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+}
+
+.add-item-summary {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.added-item-preview {
+    padding: 0.5rem;
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.item-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.item-container::after {
+    content: '\00d7';
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.img-summary-container {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.item-img {
+    border-radius: 0.25rem;
+}
+
+.item-desc {
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.add-item-link {
+    justify-self: right;
+    align-self: flex-end;
+}
+
+.save-expense-button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+}
+
+.save-expense-button-container>* {
+    background-color: transparent;
+    border: 1px solid hsl(350, 100%, 70%);
+    color: hsl(350, 100%, 70%);
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.submit-expense-button {
+    width: 100%;
+    display: block;
+    background-color: hsl(350, 100%, 70%);
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+}
+
+.settings-header {
+    color: grey;
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.settings-container {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.settings-link {
+    padding: 1rem;
+    border: 1px solid hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.settings-link::after {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    content: '\2192';
+    color: hsl(350, 100%, 70%);
+    font-weight: 700;
+}
+
+.logout-link {
+    padding: 1rem;
+    border: 1px solid hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    color: hsl(350, 100%, 70%);
+    font-weight: 700;
+}
